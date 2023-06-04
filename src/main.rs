@@ -3,19 +3,6 @@ use clap::*;
 use names::{LEFT, RIGHT};
 use rand::{thread_rng, Rng};
 
-// #[derive(Parser)]
-// struct Args {
-//     #[arg(short, long, default_value = "1")]
-//     n: Option<u64>,
-//     kind: Option<GenKind>,
-// }
-
-// #[derive(ValueEnum, Copy, Clone, Debug, PartialEq, Eq)]
-// enum GenKind {
-//     Name,
-//     Num,
-// }
-
 #[derive(Debug, Parser)]
 struct Cli {
     #[command(subcommand)]
